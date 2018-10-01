@@ -39,6 +39,10 @@ Exemple d'entrée:
  */
 
 function searchWordFilter(items, search) {
+  const regex = new RegExp(/revenge/,'i')
+  return items.filter(item => {
+    return regex.test(item)
+  })
 }
 
 // Ne pas modifier l'export
