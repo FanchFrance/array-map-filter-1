@@ -39,7 +39,7 @@ Exemple d'entrée:
  */
 
 function searchWordFilter(items, search) {
-  const regex = new RegExp(/revenge/,'i')
+  const regex = new RegExp(search,'i')
   return items.filter(item => {
     return regex.test(item)
   })
